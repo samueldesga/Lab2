@@ -10,6 +10,7 @@ public:
 	DynamicArray();
 	DynamicArray(int _capacite);
 	DynamicArray(const DynamicArray & _source);
+	DynamicArray& operator=(const DynamicArray & _source) ;
 	bool operator==(const DynamicArray & _rhs) const;
 	void operator+=(const DynamicArray & _rhs) ;
 	~DynamicArray();
