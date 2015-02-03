@@ -249,32 +249,32 @@ namespace DynamicArrayTests
 			AssertDynamicArraysAreEqual(tableau1, tableau2);
 		}
 
-	//	TEST_METHOD(etant_donne_deux_dynamicArrays_identiques_l_operateur_d_egalite_devrait_retourner_vrai)
-	//	{
-	//		//Arrange
-	//		const int CAPACITE = 5;
-	//		DynamicArray tableau1(CAPACITE);
+		TEST_METHOD(etant_donne_deux_dynamicArrays_identiques_l_operateur_d_egalite_devrait_retourner_vrai)
+		{
+			//Arrange
+			const int CAPACITE = 5;
+			DynamicArray tableau1(CAPACITE);
 
-	//		for (unsigned int i = 0; i < CAPACITE; ++i)
-	//		{
-	//			tableau1.setElement(i, i*i);
-	//		}
+			for (unsigned int i = 0; i < CAPACITE; ++i)
+			{
+				tableau1.setElement(i, i*i);
+			}
 
-	//		DynamicArray tableau2(tableau1);
+			DynamicArray tableau2(tableau1);
 
-	//		//Action-Assert
-	//		Assert::IsTrue(tableau1 == tableau2);
-	//	}
+			//Action-Assert
+			Assert::IsTrue(tableau1 == tableau2);
+		}
 
-	//	TEST_METHOD(etant_donne_deux_dynamicArrays_de_capacite_differente_l_operateur_d_egalite_devrait_retourner_faux)
-	//	{
-	//		//Arrange
-	//		DynamicArray tableau1(2);
-	//		DynamicArray tableau2(3);
+		//TEST_METHOD(etant_donne_deux_dynamicArrays_de_capacite_differente_l_operateur_d_egalite_devrait_retourner_faux)
+		//{
+		//	//Arrange
+		//	DynamicArray tableau1(2);
+		//	DynamicArray tableau2(3);
 
-	//		//Action-Assert
-	//		Assert::IsFalse(tableau1 == tableau2);
-	//	}
+		//	//Action-Assert
+		//	Assert::IsFalse(tableau1 == tableau2);
+		//}
 
 	//	TEST_METHOD(etant_donne_deux_dynamicArrays_de_capacite_egale_mais_de_contenu_different_l_operateur_d_egalite_devrait_retourner_faux)
 	//	{

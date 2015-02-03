@@ -28,8 +28,20 @@ DynamicArray::DynamicArray(const DynamicArray & _source)
 		tabElements[i] = _source.tabElements[i];
 	}
 }
-int * tabElements;
-int capacite;
+bool DynamicArray::operator==(const DynamicArray & _rhs) const{
+	
+	if (this->capacite != _rhs.capacite){
+		return false;
+	}
+	
+	for (int i = 0; i < this->capacite; i++){
+		if (this->tabElements[i] != _rhs.tabElements[i]){
+			return false;
+		}
+	}
+	
+	return true;
+}
 
 DynamicArray::~DynamicArray(){
 

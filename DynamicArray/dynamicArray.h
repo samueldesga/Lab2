@@ -10,6 +10,7 @@ public:
 	DynamicArray();
 	DynamicArray(int _capacite);
 	DynamicArray(const DynamicArray & _source);
+	bool operator==(const DynamicArray & _source) const;
 	~DynamicArray();
 	void setElement(int _index, int _valeur);
 	int getElement(int _index);
