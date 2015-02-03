@@ -9,6 +9,7 @@ class DynamicArray
 public:
 	DynamicArray();
 	DynamicArray(int _capacite);
+	DynamicArray(const DynamicArray & _source);
 	~DynamicArray();
 	void setElement(int _index, int _valeur);
 	int getElement(int _index);

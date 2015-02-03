@@ -20,6 +20,17 @@ DynamicArray::DynamicArray(int _capacite){
 	}
 
 }
+
+DynamicArray::DynamicArray(const DynamicArray & _source)
+	:capacite(_source.capacite), tabElements(new int[_source.capacite])
+{
+	for (int i = 0; i < capacite; i++){
+		tabElements[i] = _source.tabElements[i];
+	}
+}
+int * tabElements;
+int capacite;
+
 DynamicArray::~DynamicArray(){
 
 }
