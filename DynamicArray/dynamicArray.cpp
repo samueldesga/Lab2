@@ -43,6 +43,18 @@ bool DynamicArray::operator==(const DynamicArray & _rhs) const{
 	return true;
 }
 
+void DynamicArray::operator+=(const DynamicArray & _rhs) {
+	int oldCapacite = this->capacite;
+	int newCapacite = oldCapacite + _rhs.capacite;
+	this->setCapacite(newCapacite);
+	int compteur = 0;
+	for (int i = oldCapacite; i < newCapacite; i++){
+		this->setElement(i, _rhs.tabElements[compteur]);
+		compteur++;
+	}
+
+}
+
 DynamicArray::~DynamicArray(){
 
 }
